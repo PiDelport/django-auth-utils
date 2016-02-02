@@ -1,5 +1,5 @@
 from unittest import TestCase
-from unittest.mock import NonCallableMock
+from mock_compat import NonCallableMock
 
 from auth_utils.backends import BaseAuthorizationBackend
 
