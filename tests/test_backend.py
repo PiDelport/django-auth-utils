@@ -37,9 +37,9 @@ class TestDefaultBaseAuthorizationBackend(TestCase):
         """
         for user in self.users:
             for perm in [None, '', 'dummy']:
-                assert self.backend.has_perm(user, perm) == False
-                assert self.backend.has_perm(user, perm, None) == False
-                assert self.backend.has_perm(user, perm, object()) == False
+                assert self.backend.has_perm(user, perm) is False
+                assert self.backend.has_perm(user, perm, None) is False
+                assert self.backend.has_perm(user, perm, object()) is False
 
     def test_has_module_perms(self):
         """
@@ -47,4 +47,4 @@ class TestDefaultBaseAuthorizationBackend(TestCase):
         """
         for user in self.users:
             for app_label in [None, '', 'dummy', 'app.perm']:
-                assert self.backend.has_module_perms(user, app_label) == False
+                assert self.backend.has_module_perms(user, app_label) is False
