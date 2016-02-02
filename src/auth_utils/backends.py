@@ -8,6 +8,18 @@ class BaseAuthorizationBackend:
     Base implementation of an authorization backend.
     """
 
+    def authenticate(self):
+        """
+        Does nothing.
+        """
+        return None
+
+    def get_user(self, user_id):
+        """
+        Does nothing.
+        """
+        return None
+
     def get_user_permissions(self, user_obj, obj=None):
         """
         Extend this to grant additional user-based permissions.

@@ -15,6 +15,19 @@ class TestDefaultBaseAuthorizationBackend(TestCase):
         self.inactive_user = NonCallableMock(spec=[], is_active=False)
         self.users = [self.active_user, self.inactive_user]
 
+    def test_authenticate(self):
+        """
+        `authenticate()` does nothing.
+        """
+        assert self.backend.authenticate() is None
+
+    def test_get_user(self):
+        """
+        `get_user()` does nothing.
+        """
+        for user_id in [None, 1, 'foo']:
+            assert self.backend.get_user(user_id) is None
+
     def test_get_permissions(self):
         """
         The ``get_*_permissions()`` methods return no permissions.
