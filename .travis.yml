@@ -3,16 +3,20 @@ python: 3.5
 cache: pip
 
 env:
-  - TOXENV=py27-dj18-codecov
+  - TOXENV=py27-dj18
+  - TOXENV=py27-dj19
+  - TOXENV=py34-dj18
+  - TOXENV=py34-dj19
+  - TOXENV=py35-dj18
+  - TOXENV=py35-dj19
+  - TOXENV=pypy-dj18
+  - TOXENV=pypy-dj19
+  - TOXENV=pypy3-dj18
+  - TOXENV=pypy3-dj19
+
+  # Limit coverage reporting only to the latest Python 2 and 3 versions.
   - TOXENV=py27-dj19-codecov
-  - TOXENV=py34-dj18-codecov
-  - TOXENV=py34-dj19-codecov
-  - TOXENV=py35-dj18-codecov
   - TOXENV=py35-dj19-codecov
-  - TOXENV=pypy-dj18-codecov
-  - TOXENV=pypy-dj19-codecov
-  - TOXENV=pypy3-dj18-codecov
-  - TOXENV=pypy3-dj19-codecov
 
 matrix:
   allow_failures:
@@ -20,8 +24,8 @@ matrix:
     #
     # See: https://github.com/travis-ci/travis-ci/issues/4306
     #
-    - env: TOXENV=pypy3-dj18-codecov
-    - env: TOXENV=pypy3-dj19-codecov
+    - env: TOXENV=pypy3-dj18
+    - env: TOXENV=pypy3-dj19
 
 # Avoid overriding the default install step,
 # so that automatic pip caching works.
