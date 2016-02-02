@@ -4,7 +4,7 @@ Stub settings for tests.
 
 SECRET_KEY = 'django-auth-utils tests'
 
-ROOT_URLCONF = 'test_urls'
+ROOT_URLCONF = 'stub_urls'
 
 
 # Explicit default value, to silence system check warning 1_7.W001 in Django 1.8.
