@@ -28,7 +28,7 @@ matrix:
 #
 # See: https://github.com/travis-ci/travis-ci/issues/3239
 #
-before_install:
+before_script:
   - pip install tox
 
 script:
