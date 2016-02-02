@@ -12,3 +12,8 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
 ]
+
+
+INSTALLED_APPS = [
+    'auth_utils',
+]
