@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-auth-utils',
-    use_vcs_version=True,
+    use_scm_version=True,
 
     author='Piet Delport',
     author_email='pjdelport@gmail.com',
@@ -10,7 +10,7 @@ setup(
     package_dir={'': 'src'},
     packages=find_packages('src'),
 
-    setuptools_requires=['setuptools_scm'],
+    setup_requires=['setuptools_scm'],
 
     install_requires=[
         'attrs',
