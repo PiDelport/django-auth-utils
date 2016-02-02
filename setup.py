@@ -1,9 +1,10 @@
+# coding: utf-8
 from setuptools import setup, find_packages
 
 setup(
     name='django-auth-utils',
 
-    author='Piet Delport',
+    author=u'Piët Delport',
     author_email='pjdelport@gmail.com',
 
     package_dir={'': 'src'},
