@@ -16,4 +16,9 @@ MIDDLEWARE_CLASSES = [
 
 INSTALLED_APPS = [
     'auth_utils',
+
+    # These are needed for django.contrib.auth.mixins.PermissionRequiredMixin
+    # to be importable by auth_utils.views.
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
 ]
