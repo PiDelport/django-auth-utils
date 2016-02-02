@@ -2,7 +2,7 @@
 Auth-related view utils.
 """
 from django.views.generic.detail import SingleObjectMixin
-from django.contrib.auth.mixins import PermissionRequiredMixin
+from auth_utils.django18_compat import PermissionRequiredMixin
 
 
 class ObjectPermissionRequiredMixin(PermissionRequiredMixin, SingleObjectMixin):
