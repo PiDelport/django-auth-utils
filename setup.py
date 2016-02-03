@@ -3,6 +3,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-auth-utils',
+    description='Django authentication and authorization utilities',
+    url='https://github.com/pjdelport/django-auth-utils',
 
     author=u'Piët Delport',
     author_email='pjdelport@gmail.com',
@@ -18,6 +20,7 @@ setup(
         'Django',
     ],
 
+    license = 'Public Domain',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',
