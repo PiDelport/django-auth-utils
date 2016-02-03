@@ -1,0 +1,11 @@
+# Packages useful for development.
+#
+# pip install -r dev-requirements.txt
+
+tox
+
+flake8
+
+pytest
+pytest-django
+pytest-cov

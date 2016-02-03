@@ -1,0 +1,7 @@
+# http://coverage.readthedocs.org/en/latest/config.html
+[run]
+branch = True
+
+omit =
+    # This file is mostly a compatibility copy of Django code.
+    src/auth_utils/django18_compat.py

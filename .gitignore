@@ -14,3 +14,7 @@ dist/
 
 # pytest cache directory
 .cache/
+
+# Test coverage
+.coverage
+htmlcov

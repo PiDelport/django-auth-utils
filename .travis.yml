@@ -1,0 +1,39 @@
+language: python
+python: 3.5
+cache: pip
+
+env:
+  - TOXENV=py27-dj18
+  - TOXENV=py27-dj19
+  - TOXENV=py34-dj18
+  - TOXENV=py34-dj19
+  - TOXENV=py35-dj18
+  - TOXENV=py35-dj19
+  - TOXENV=pypy-dj18
+  - TOXENV=pypy-dj19
+  - TOXENV=pypy3-dj18
+  - TOXENV=pypy3-dj19
+
+  # Limit coverage reporting only to the latest Python 2 and 3 versions.
+  - TOXENV=py27-dj19-codecov
+  - TOXENV=py35-dj19-codecov
+
+matrix:
+  allow_failures:
+    # PyPy3 on Travis seems to be broken, as of 2016-02.
+    #
+    # See: https://github.com/travis-ci/travis-ci/issues/4306
+    #
+    - env: TOXENV=pypy3-dj18
+    - env: TOXENV=pypy3-dj19
+
+# Avoid overriding the default install step,
+# so that automatic pip caching works.
+#
+# See: https://github.com/travis-ci/travis-ci/issues/3239
+#
+before_script:
+  - pip install tox
+
+script:
+  - tox
