@@ -1,31 +1,29 @@
 language: python
-python: 3.5
 cache: pip
 
-env:
-  - TOXENV=py27-dj18
-  - TOXENV=py27-dj19
-  - TOXENV=py34-dj18
-  - TOXENV=py34-dj19
-  - TOXENV=py35-dj18
-  - TOXENV=py35-dj19
-  - TOXENV=pypy-dj18
-  - TOXENV=pypy-dj19
-  - TOXENV=pypy3-dj18
-  - TOXENV=pypy3-dj19
-
-  # Limit coverage reporting only to the latest Python 2 and 3 versions.
-  - TOXENV=py27-dj19-codecov
-  - TOXENV=py35-dj19-codecov
-
 matrix:
+  include:
+    - { python: '2.7', env: TOXENV=py27-dj18 }
+    - { python: '2.7', env: TOXENV=py27-dj19 }
+    - { python: '3.4', env: TOXENV=py34-dj18 }
+    - { python: '3.4', env: TOXENV=py34-dj19 }
+    - { python: '3.5', env: TOXENV=py35-dj18 }
+    - { python: '3.5', env: TOXENV=py35-dj19 }
+    - { python: 'pypy', env: TOXENV=pypy-dj18 }
+    - { python: 'pypy', env: TOXENV=pypy-dj19 }
+    - { python: 'pypy3', env: TOXENV=pypy3-dj18 }
+    - { python: 'pypy3', env: TOXENV=pypy3-dj19 }
+
+    # Limit coverage reporting only to the latest Python 2 and 3 versions.
+    - { python: '2.7', env: TOXENV=py27-dj19-codecov }
+    - { python: '3.5', env: TOXENV=py35-dj19-codecov }
+
   allow_failures:
     # PyPy3 on Travis seems to be broken, as of 2016-02.
     #
     # See: https://github.com/travis-ci/travis-ci/issues/4306
     #
-    - env: TOXENV=pypy3-dj18
-    - env: TOXENV=pypy3-dj19
+    - python: 'pypy3'
 
 # Avoid overriding the default install step,
 # so that automatic pip caching works.
