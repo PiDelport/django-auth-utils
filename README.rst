@@ -11,7 +11,7 @@ Django authentication and authorization utilities.
     :target: https://github.com/pjdelport/django-auth-utils
 
 .. image:: https://img.shields.io/github/issues/pjdelport/django-auth-utils.svg
-    :target: https://github.com/pjdelport/django-auth-utils/issues
+    :target: https://github.com/pjdelport/django-auth-utils/issues?q=is:open
 
 .. image:: https://travis-ci.org/pjdelport/django-auth-utils.svg?branch=master
     :target: https://travis-ci.org/pjdelport/django-auth-utils
