@@ -7,6 +7,12 @@ Django authentication and authorization utilities.
 .. image:: https://img.shields.io/pypi/v/django-auth-utils.svg
     :target: https://pypi.python.org/pypi/django-auth-utils
 
+.. image:: https://img.shields.io/badge/source-GitHub-lightgrey.svg
+    :target: https://github.com/pjdelport/django-auth-utils
+
+.. image:: https://img.shields.io/github/issues/pjdelport/django-auth-utils.svg
+    :target: https://github.com/pjdelport/django-auth-utils/issues?q=is:open
+
 .. image:: https://travis-ci.org/pjdelport/django-auth-utils.svg?branch=master
     :target: https://travis-ci.org/pjdelport/django-auth-utils
 
