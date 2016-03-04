@@ -15,7 +15,10 @@ matrix:
     - { python: 'pypy3', env: TOXENV=pypy3-dj19 }
 
     # Limit coverage reporting only to the latest Python 2 and 3 versions.
+    # Include both Django 1.8 and 1.9, to cover the compatiblity code.
+    - { python: '2.7', env: TOXENV=py27-dj18-codecov }
     - { python: '2.7', env: TOXENV=py27-dj19-codecov }
+    - { python: '3.5', env: TOXENV=py35-dj18-codecov }
     - { python: '3.5', env: TOXENV=py35-dj19-codecov }
 
   allow_failures:
