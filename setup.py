@@ -20,7 +20,7 @@ setup(
         'Django',
     ],
 
-    license = 'Public Domain',
+    license='Public Domain',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',
