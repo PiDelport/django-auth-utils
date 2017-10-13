@@ -9,6 +9,8 @@ matrix:
     - { python: '3.4', env: TOXENV=py34-dj19 }
     - { python: '3.5', env: TOXENV=py35-dj18 }
     - { python: '3.5', env: TOXENV=py35-dj19 }
+    - { python: '3.6', env: TOXENV=py36-dj18 }
+    - { python: '3.6', env: TOXENV=py36-dj19 }
     - { python: 'pypy', env: TOXENV=pypy-dj18 }
     - { python: 'pypy', env: TOXENV=pypy-dj19 }
     - { python: 'pypy3', env: TOXENV=pypy3-dj18 }
@@ -18,8 +20,8 @@ matrix:
     # Include both Django 1.8 and 1.9, to cover the compatiblity code.
     - { python: '2.7', env: TOXENV=py27-dj18-codecov }
     - { python: '2.7', env: TOXENV=py27-dj19-codecov }
-    - { python: '3.5', env: TOXENV=py35-dj18-codecov }
-    - { python: '3.5', env: TOXENV=py35-dj19-codecov }
+    - { python: '3.6', env: TOXENV=py36-dj18-codecov }
+    - { python: '3.6', env: TOXENV=py36-dj19-codecov }
 
   allow_failures:
     # PyPy3 on Travis seems to be broken, as of 2016-02.
