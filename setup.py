@@ -1,9 +1,16 @@
 # coding: utf-8
 from setuptools import setup, find_packages
 
+
+def README():
+    with open('README.rst') as f:
+        return f.read()
+
+
 setup(
     name='django-auth-utils',
     description='Django authentication and authorization utilities',
+    long_description=README(),
     url='https://github.com/pjdelport/django-auth-utils',
 
     author='Pi Delport',
