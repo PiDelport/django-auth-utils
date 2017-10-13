@@ -6,7 +6,7 @@ setup(
     description='Django authentication and authorization utilities',
     url='https://github.com/pjdelport/django-auth-utils',
 
-    author=u'Piët Delport',
+    author='Pi Delport',
     author_email='pjdelport@gmail.com',
 
     package_dir={'': 'src'},
