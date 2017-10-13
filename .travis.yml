@@ -34,13 +34,6 @@ matrix:
     - { python: '3.6', env: TOXENV=py36-dj1.8-codecov }
     - { python: '3.6', env: TOXENV=py36-dj1.11-codecov }
 
-  allow_failures:
-    # PyPy3 on Travis seems to be broken, as of 2016-02.
-    #
-    # See: https://github.com/travis-ci/travis-ci/issues/4306
-    #
-    - python: 'pypy3'
-
 # Avoid overriding the default install step,
 # so that automatic pip caching works.
 #
