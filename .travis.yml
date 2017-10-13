@@ -3,30 +3,36 @@ cache: pip
 
 matrix:
   include:
-    - { python: '2.7', env: TOXENV=py27-dj18 }
-    - { python: '2.7', env: TOXENV=py27-dj19 }
-    - { python: '3.4', env: TOXENV=py34-dj18 }
-    - { python: '3.4', env: TOXENV=py34-dj19 }
-    - { python: '3.5', env: TOXENV=py35-dj18 }
-    - { python: '3.5', env: TOXENV=py35-dj19 }
-    - { python: 'pypy', env: TOXENV=pypy-dj18 }
-    - { python: 'pypy', env: TOXENV=pypy-dj19 }
-    - { python: 'pypy3', env: TOXENV=pypy3-dj18 }
-    - { python: 'pypy3', env: TOXENV=pypy3-dj19 }
+    - { python: '2.7', env: TOXENV=py27-dj1.8 }
+    - { python: '2.7', env: TOXENV=py27-dj1.10 }
+    - { python: '2.7', env: TOXENV=py27-dj1.11 }
+
+    - { python: '3.4', env: TOXENV=py34-dj1.8 }
+    - { python: '3.4', env: TOXENV=py34-dj1.10 }
+    - { python: '3.4', env: TOXENV=py34-dj1.11 }
+
+    - { python: '3.5', env: TOXENV=py35-dj1.8 }
+    - { python: '3.5', env: TOXENV=py35-dj1.10 }
+    - { python: '3.5', env: TOXENV=py35-dj1.11 }
+
+    - { python: '3.6', env: TOXENV=py36-dj1.8 }
+    - { python: '3.6', env: TOXENV=py36-dj1.10 }
+    - { python: '3.6', env: TOXENV=py36-dj1.11 }
+
+    - { python: 'pypy', env: TOXENV=pypy-dj1.8 }
+    - { python: 'pypy', env: TOXENV=pypy-dj1.10 }
+    - { python: 'pypy', env: TOXENV=pypy-dj1.11 }
+
+    - { python: 'pypy3', env: TOXENV=pypy3-dj1.8 }
+    - { python: 'pypy3', env: TOXENV=pypy3-dj1.10 }
+    - { python: 'pypy3', env: TOXENV=pypy3-dj1.11 }
 
     # Limit coverage reporting only to the latest Python 2 and 3 versions.
-    # Include both Django 1.8 and 1.9, to cover the compatiblity code.
-    - { python: '2.7', env: TOXENV=py27-dj18-codecov }
-    - { python: '2.7', env: TOXENV=py27-dj19-codecov }
-    - { python: '3.5', env: TOXENV=py35-dj18-codecov }
-    - { python: '3.5', env: TOXENV=py35-dj19-codecov }
-
-  allow_failures:
-    # PyPy3 on Travis seems to be broken, as of 2016-02.
-    #
-    # See: https://github.com/travis-ci/travis-ci/issues/4306
-    #
-    - python: 'pypy3'
+    # Include both Django 1.8 and 1.11, to cover the compatiblity code.
+    - { python: '2.7', env: TOXENV=py27-dj1.8-codecov }
+    - { python: '2.7', env: TOXENV=py27-dj1.11-codecov }
+    - { python: '3.6', env: TOXENV=py36-dj1.8-codecov }
+    - { python: '3.6', env: TOXENV=py36-dj1.11-codecov }
 
 # Avoid overriding the default install step,
 # so that automatic pip caching works.

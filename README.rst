@@ -30,8 +30,8 @@ Installation
 
 Supported and tested on:
 
-* Python: 2.7, 3.4, 3.5, PyPy
-* Django: 1.8, 1.9
+* Python: 2.7, 3.4, 3.5, 3.6, PyPy, PyPy3
+* Django: 1.8, 1.10, 1.11
 
 
 Configuration
