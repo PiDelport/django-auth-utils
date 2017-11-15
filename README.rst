@@ -44,7 +44,7 @@ DjangoTemplates_ OPTIONS.
 
 
 .. _DjangoTemplates:
-    https://docs.djangoproject.com/en/1.9/topics/templates/#django.template.backends.django.DjangoTemplates
+    https://docs.djangoproject.com/en/stable/topics/templates/#django.template.backends.django.DjangoTemplates
 
 
 Usage
@@ -58,10 +58,10 @@ The ``ObjectPermissionRequiredMixin`` view combines Django's PermissionRequiredM
 SingleObjectMixin_ views, and performs the permission check against the object that was looked up.
 
 .. _PermissionRequiredMixin:
-    https://docs.djangoproject.com/en/1.9/topics/auth/default/#the-permissionrequiredmixin-mixin
+    https://docs.djangoproject.com/en/stable/topics/auth/default/#the-permissionrequiredmixin-mixin
 
 .. _SingleObjectMixin:
-    https://docs.djangoproject.com/en/1.9/ref/class-based-views/mixins-single-object/#singleobjectmixin
+    https://docs.djangoproject.com/en/stable/ref/class-based-views/mixins-single-object/#singleobjectmixin
 
 Use it like the base classes:
 
@@ -99,7 +99,7 @@ The ``object`` argument is optional. If omitted, the global permission is checke
 similar to Django's `perms object`_.
 
 .. _perms object:
-    https://docs.djangoproject.com/en/1.9/topics/auth/default/#permissions
+    https://docs.djangoproject.com/en/stable/topics/auth/default/#permissions
 
 Examples:
 
@@ -140,10 +140,10 @@ This is intended to make it easy to write `custom authorization`_ policies that 
 methods they're interested in:
 
 .. _authentication backend:
-    https://docs.djangoproject.com/en/1.9/topics/auth/customizing/#writing-an-authentication-backend
+    https://docs.djangoproject.com/en/stable/topics/auth/customizing/#writing-an-authentication-backend
 
 .. _custom authorization:
-    https://docs.djangoproject.com/en/1.9/topics/auth/customizing/#handling-authorization-in-custom-backends
+    https://docs.djangoproject.com/en/stable/topics/auth/customizing/#handling-authorization-in-custom-backends
 
 .. code:: python
 
@@ -188,7 +188,7 @@ Once defined, these policies can be enabled in AUTHENTICATION_BACKENDS_:
     ]
 
 .. _AUTHENTICATION_BACKENDS:
-    https://docs.djangoproject.com/en/1.9/ref/settings/#std:setting-AUTHENTICATION_BACKENDS
+    https://docs.djangoproject.com/en/stable/ref/settings/#std:setting-AUTHENTICATION_BACKENDS
 
 
 Related work
